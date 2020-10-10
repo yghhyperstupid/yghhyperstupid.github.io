@@ -26,7 +26,7 @@
 이 때문에 **YGHHYPERSTUPID**에서는 해당 인물의 이니셜을 사용하였고, 해당 인물임을 특정하기 어려운 합성 사진을 이용하는 등 피해자 특정성을 성립시키지 않으려 발악을 하고 있습니다.
 
 ## 6. 이스터에그
-&nbsp;<span style="text-color:white">엄</span>
+&nbsp;<p style="text-color:white">엄</p>
 
 ## 7. 비고
-&nbsp;조만간 웹사이트 **PJHHYPERSTUPID**의 개발을 기획하고 있으나, 자금이 부족해 여러분들의 후원을 받고 있습니다. **YGHHYPERSTUPID**에는 광고도 배치하여 돈을 빨아먹을 예정입니다.
+&nbsp;조만간 웹사이트 **PJHHYPERSTUPID**의 개발을 기획하고 있으나, 자금이 부족해 여러분들의 후원을 받고 있습니다. 또한 **YGHHYPERSTUPID**에는 곧 광고도 배치하여 방문자들의 돈을 빨아먹을 예정입니다.
