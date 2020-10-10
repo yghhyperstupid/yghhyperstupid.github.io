@@ -3,4 +3,4 @@
  
 ***
 ## 1.YGHHYPERSTUPID이란?
- **YGHHYPERSTUPID**은 **YGH**에게 엿을 먹이기 위해 운영되는 웹페이지로, YGH의 기분을 상하게 하는 것을 기본 목표로 삼고 있습니다. 주소는 [https:/yghhyperstupid.github.io](https:/yghhyperstupid.github.io)이며, [https://bit.ly/34GKe4C](https://bit.ly/34GKe4C)로도 접속 가능합니다.
+ **YGHHYPERSTUPID**은 **YGH**에게 엿을 먹이기 위해 운영되는 웹페이지로, YGH의 기분을 상하게 하는 것을 기본 목표로 삼고 있습니다. 주소는 [https://yghhyperstupid.github.io/home](https://yghhyperstupid.github.io/home)이며, [https://bit.ly/34GKe4C](https://bit.ly/34GKe4C)로도 접속 가능합니다.
