@@ -28,6 +28,12 @@
 	text-align:center
 	}
 
+	#fl {
+	text-decoration:underline;
+	color:blue;
+	cursor:pointer
+	}
+
  	.pic {
     	animation-name:move;
     	animation-duration:1.5s;
@@ -138,7 +144,7 @@
 	</section>
 
 	<div style="clear:both">
-		<br><h3 style="text-align:center">이외의 정보는 <a href="https://yghhyperstupid.github.io">여기</a>에서 확인하실 수 있습니다.</h3>
+		<br><h3 style="text-align:center" id="fl" onclick="al()">개발자 노트 보기</h3>
 	
 		<footer>
 			<p>Copyright <b>©YGHHYPERSTUPID</b>. All right reserved.</p>
@@ -146,6 +152,15 @@
 	</div>
 	
 	</main>
+
+<script>
+
+	function al() {
+	alert("권한이 없습니다. 로그인이 필요합니다.");
+	location.href="http://yghhyperstupid.github.io/login";
+	}
+
+</script>
 
 </body>
 
