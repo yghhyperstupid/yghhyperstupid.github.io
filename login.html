@@ -154,7 +154,9 @@
 		}
 	else {
 		var a=document.getElementById("wh");
-		var audio = new Audio('https://drive.google.com/uc?export=download&id=1oN47QOph_Nh87jfwRBEkYoFwjAf-u1dE');var dc=document.documentElement;
+		var audio = new Audio('https://drive.google.com/uc?export=download&id=1oN47QOph_Nh87jfwRBEkYoFwjAf-u1dE');
+		audio.play();
+		var dc=document.documentElement;
 		 if (dc.requestFullscreen)
 			dc.requestFullscreen();
 		else if (dc.webkitRequestFullscreen)
@@ -165,7 +167,6 @@
 			dc.msRequestFullscreen();
 		a.style.display="none";
 		document.getElementById("bd").style.background="black";
-		audio.play();
 		window.setTimeout(go,6000);
 		}
 
