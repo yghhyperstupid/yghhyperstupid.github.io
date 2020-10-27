@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+	<meta charset="UTF-8">
+	<title>YGHHYPERSTUPID</title>
+</head>
+  
+<style>
+
+	body {
+	width:1500px;
+	overflow:auto;
+	line-height:160%;
+	background-color:#fafafa;
+	font-family:'Sans-serif'
+	}
+	
+	main {
+	}
+
+	section {
+	}
+
+	footer {
+	margin-top:50px;
+	font-size:3px;
+	text-align:center
+	}
+
+	form {
+	margin-left:30px;
+	margin-top:10px;
+	margin-bottom:30px;
+	font-size:105%;
+	line-height:160%
+	}
+
+	#home {
+	transition:font-size 0.2s;
+	}
+	#home:hover {font-size:110%;}
+
+	
+	.text {
+	height:50px;
+	}
+
+	.link {
+	text-decoration:none;
+	color:gray;
+	}
+
+	
+	button {
+	float:left;
+	margin-left:0px;
+	margin-top:0px;
+	border:1px solid gray;
+	box-sizing: border-box;
+	border-radius:10px 10px;
+	width:70px;
+	height:35px;
+	font-size:110%;
+	cursor:pointer;
+	background-color:#00bb00;
+	color:white;
+	font-family:'Noto Sans KR', Sans-serif
+	}
+
+	input, textarea{
+	font-size:100%;
+	border:1px #aaaaaa solid;
+	padding:8px;
+	font-family:Sans-serif
+	}
+  
+	h3{
+	margin-bottom:10px;
+	}
+	
+	[type="radio"] {
+	width:17px;
+	height:17px;
+	}
+	
+	button {
+	border:1px solid gray;
+	box-sizing: border-box;
+	border-radius:10px 10px;
+	margin-top:0px;
+	margin-left:80px;
+	width:70px;
+	height:35px;
+	font-size:110%;
+	cursor:pointer;
+	background-color:#00bb00;
+	color:white;
+	font-family:'Noto Sans KR', Sans-serif;
+	padding:0px
+	}
+	
+</style>
+  
+<body>
+	<header>
+		<h1 style="font-size:250%;line-height:100%"><b>
+		<a href="https://yghhyperstupid.github.io/home" target="_self" id="home" style="color:#00dd00;text-decoration:none;float:left">
+		&nbsp;YGHHYPERSTUPID</a>
+		</b></h1>
+
+	<div style="float:right;margin-top:20px">
+		<a href="https://yghhyperstupid.github.io/login" style="color:gray;">로그인</a>&nbsp;
+		<a href="https://yghhyperstupid.github.io/signup" style="color:gray;">회원가입</a>
+	</div>	
+
+	<table style="width:1500px;clear:both;padding-top:30px;">
+
+	<tr>
+	<th><a href="https://yghhyperstupid.github.io/information" class="link">정보</a></th>
+        <th><a href="https://yghhyperstupid.github.io/request" class="link">의뢰</a></th>
+	<th><a href="https://yghhyperstupid.github.io/galleries" class="link">갤러리</a></th>
+	<th><a href="https://yghhyperstupid.github.io/donation" class="link">후원</a></th>
+	</tr>
+
+	</table>
+
+	</header>	
+
+	<hr>
+
+
+	<section style="padding-top:30px">
+
+		<h2> &nbsp;&nbsp;회원가입</h2>
+	
+			<h4 style="margin-top:20px;margin-left:1%;">
+			&nbsp;YGHHYPERSTUPID의 회원이 되면 다양한 혜택을 누릴 수 있게 됩니다.</h4>
+	</section>
+	<hr>
+	
+	<form id="fr">
+	<section style="margin-top:50px;margin-left:50px;">
+		<h3>성함</h3>
+		<input type="text" id="name" size="80" placeholder="성함을 입력해 주세요" maxlength="5" required>
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>이메일</h3>
+		<input type="email" id="email" size="80" placeholder="이메일을 입력해 주세요" required>
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>생년월일</h3>
+		<input type="date" id="birth" required>
+	</section>
+
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>아이디</h3>
+		<input type="text" id="id" size="80" placeholder="아이디를 입력해 주세요" required>
+	</section>
+
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>비밀번호</h3>
+		<input type="password" id="pw" size="80" placeholder="비밀번호를 입력해 주세요" required>
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>비밀번호 확인</h3>
+		<input type="password" id="pw2" size="80" placeholder="비밀번호를 재입력해 주세요" required>
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>성별</h3>
+		<select type="text" id="gender" style="width:80px;height:35px;font-size:105%">
+			<option value="M">남성</option>
+			<option value="F">여성</option>
+		</select>
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>전화번호</h3>
+		<input type="text" id="number" size="80" placeholder="숫자만 입력해 주세요" maxlength="11"
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>주소</h3>
+		<textarea id="address" rows="3" cols="81" placeholder="주소를 입력해 주세요" required></textarea>
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>계좌번호</h3>
+		<input type="text" id="account" size="80" placeholder="계좌번호를 입력해 주세요" required>
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>수술 내역</h3>
+		<input type="text" id="surgery" size="80" placeholder="수술 내역을 전부 입력해 주세요">
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>최근 2년간 약물 복용 여부</h3>
+		<input type="text" id="pill" size="80" placeholder="복용한 약물을 전부 입력해 주세요">
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>시력</h3>
+		<input type="text" id="leye" size="36" placeholder="왼눈 시력을 입력해 주세요" maxlength="5" required>
+		<input type="text" id="reye" size="36" placeholder="오른눈 시력을 입력해 주세요" maxlength="5" required>
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>혈액형</h3>
+		<select type="text" id="blood" style="width:80px;height:35px;font-size:105%">
+			<option value="A">A형</option>
+			<option value="B">B형</option>
+			<option value="O">O형</option>
+			<option value="AB">AB형</option>
+			<option value="other">기타</option>
+		</select>
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;">
+		<h3>음주/흡연 여부</h3>
+		<input type="text" id="ds" size="80" placeholder="음주, 흡연 여부를 입력해 주세요">
+	</section>
+	
+	<section style="margin-top:30px;margin-left:50px;font-size:105%">
+		<div style="line-height:200%">
+			<input type="checkbox" name="request" id="r1"> 본 사이트의 약관에 전부 동의합니다.<br>
+			<input type="checkbox" name="request" id="r2"> YGHHYPERSTUPID에서 신상 정보를 수집, 이용하는 것에 동의합니다.<br>
+			<input type="checkbox" name="request" id="r3"> 본인의 신체에 대한 권리를 포기하는 데에 동의합니다.<br>
+		</div>
+	</section>
+	</form>
+	
+	<button onclick="abc()">제출</button>
+	
+	
+	<div style="clear:both">
+		<br>
+		<footer>
+			<p>Copyright <b>©YGHHYPERSTUPID</b>. All right reserved.</p>
+		</footer>
+	</div>
+
+	<script>
+	
+	function abc(){
+	
+		var korean=/[가-힣]{2,5}/;
+		var formE=/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+		var formidpw=/^[A-Za-z0-9+]{6,12}$/; 
+		var num=/[0-9]{10,11}/;
+		
+		var a=0;
+		if ((a==0)&&(document.getElementById("name").value=='')){
+			alert("이름을 입력하세요.");
+			location.href="#name";
+			a=1;
+		}
+		if ((a==0)&&(!korean.test(document.getElementById("name").value))){
+			alert("이름을 확인해 주세요.");
+			location.href="#name";
+			a=1;
+		}
+		
+		if ((a==0)&&(document.getElementById("email").value=='')){
+			alert("이메일을 입력하세요.");
+			location.href="#email";
+			a=1;
+		}
+		if ((a==0)&&(!formE.test(document.getElementById("email").value))){
+			alert("올바른 이메일 형식이 아닙니다.");
+			location.href="#email";
+			a=1;
+		}
+		
+		if ((a==0)&&(document.getElementById("birth").value=='')){
+			alert("생년월일을 입력하세요.");
+			location.href="#birth";
+			a=1;
+		}
+		
+		if ((a==0)&&(document.getElementById("id").value=='')){
+			alert("아이디를 입력하세요.");
+			location.href="#id";
+			a=1;
+		}
+		if ((a==0)&&(!formidpw.test(document.getElementById("id").value))){
+			alert("아이디는 영어 대소문자와 숫자를 이용하여 6-20자로 입력하세요.");
+			location.href="#id";
+			a=1;
+		}
+		
+		if ((a==0)&&(document.getElementById("pw").value=='')){
+			alert("비밀번호를 입력하세요.");
+			location.href="#pw";
+			a=1;
+		}
+		if ((a==0)&&(!formidpw.test(document.getElementById("pw").value))){
+			alert("비밀번호는 영어 대소문자와 숫자를 이용하여 6-20자로 입력하세요.");
+			location.href="#pw";
+			a=1;
+		}
+		
+		if ((a==0)&&(document.getElementById("pw").value !== document.getElementById("pw2").value)){
+			alert("비밀번호가 일치하지 않습니다.");
+			location.href="#pw";
+			a=1;
+		}
+		
+		if ((a==0)&&(document.getElementById("number").value=='')){
+			alert("전화번호를 입력하세요.");
+			location.href="#number";
+			a=1;
+		}
+		if ((a==0)&&(!num.test(document.getElementById("number").value))){
+			alert("올바른 전화번호 형식이 아닙니다.");
+			location.href="#number";
+			a=1;
+		}
+		
+		if ((a==0)&&(document.getElementById("address").value=='')){
+			alert("주소를 입력하세요.");
+			location.href="#address";
+			a=1;
+		}
+		
+		if ((a==0)&&(document.getElementById("account").value=='')){
+			alert("계좌번호를 입력하세요.");
+			location.href="#account";
+			a=1;
+		}
+			
+		if ((a==0)&&(document.getElementById("leye").value=='')){
+			alert("왼눈 시력을 입력하세요.");
+			location.href="#leye";
+			a=1;
+		}
+		if ((a==0)&&(document.getElementById("reye").value=='')){
+			alert("오른눈 시력을 입력하세요.");
+			location.href="#reye";
+			a=1;
+		}
+		
+		if(((document.getElementById("r1").checked==false)||
+			(document.getElementById("r2").checked==false)||
+			(document.getElementById("r3").checked==false))&& a==0 ){
+				alert("약관에 동의해 주세요.");
+				history.back();
+				a=1;
+		}
+		
+		if (a==0)
+			location.href="http://yghhyperstupid.github.io/gameover";
+		
+		}
+	</script>
+
+</body>
+
+</html>

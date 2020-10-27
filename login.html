@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+	<meta charset="UTF-8">
+	<title>YGHHYPERSTUPID</title>
+</head>
+  
+<style>
+
+	body {
+	width:1500px;
+	overflow:auto;
+	line-height:150%;
+	background-color:#fafafa;
+	font-family:'Sans-serif'
+	}
+
+	footer {
+	margin-top:50px;
+	font-size:3px;
+	text-align:center
+	}
+
+	#home {
+	transition:font-size 0.2s;
+	}
+	#home:hover {font-size:110%;}
+
+	.link{
+	text-decoration:none;
+	color:gray;
+	}
+
+	#block{
+	border:1px solid gray;
+	box-sizing: border-box;
+	border-radius:1.5%;
+	width:500px;
+	height:330px;
+	margin-left:500px;
+	margin-top:40px;
+	background-color:white;
+	padding-top:30px;
+	padding-left:50px;
+	}
+	
+	input{
+	font-size:110%;
+	border:1px gray solid;
+	padding:7px;
+	}
+  
+	button { 
+	border:1px solid gray;
+	box-sizing: border-box;
+	border-radius:10px 10px;
+	margin-top:30px;
+	margin-left:145px;
+	width:100px;
+	height:40px;
+	font-size:110%;
+	cursor:pointer;
+	background-color:#00bb00;
+	color:white;
+	font-family:'Noto Sans KR', Sans-serif
+	}
+
+	#su {
+		margin-left:890px;
+		color:gray;
+		font-size:105%;
+	}
+
+</style>
+  
+<body id="bd">
+	<div id="wh">
+	<header>
+		<h1 style="font-size:250%;line-height:100%"><b>
+		<a href="https://yghhyperstupid.github.io/home" target="_self" id="home" style="color:#00dd00;text-decoration:none;float:left">
+		&nbsp;YGHHYPERSTUPID</a>
+		</b></h1>
+
+	<div style="float:right;margin-top:20px">
+		<a href="https://yghhyperstupid.github.io/login" style="color:gray;">로그인</a>&nbsp;
+		<a href="https://yghhyperstupid.github.io/signup" style="color:gray;">회원가입</a>
+	</div>	
+
+	<table style="width:1500px;clear:both;padding-top:30px;">
+
+	<tr>
+	<th><a href="https://yghhyperstupid.github.io/information" class="link">정보</a></th>
+        <th><a href="https://yghhyperstupid.github.io/request" class="link">의뢰</a></th>
+	<th><a href="https://yghhyperstupid.github.io/galleries" class="link">갤러리</a></th>
+	<th><a href="https://yghhyperstupid.github.io/donation" class="link">후원</a></th>
+	</tr>
+
+	</table>
+
+	</header>	
+
+	<hr>
+
+	<main>
+
+	<section style="padding-top:0px">
+			<br><br><br>
+			<header>
+				<h2 style="text-align:center">로그인</h2>
+			</header>
+
+			<div id="block">
+				<h4 style="margin-bottom:10px">아이디</h4>
+
+				<input type="text" id="id" size="37">
+
+				<h4 style="margin-bottom:10px;margin-top:30px;">비밀번호</h4>
+
+				<input type="password" id="pw" size="37">
+
+				<button onclick="cli()">로그인</button>
+			</div>
+	
+	<br>
+	<a href="http://yghhyperstupid.github.io/signup" id="su"> 회원가입하기</a>
+	
+	</section>
+
+	<div style="clear:both">
+		<footer style="margin-top:200px">
+			<p>Copyright <b>©YGHHYPERSTUPID</b>. All right reserved.</p>
+		</footer>
+	</div>
+	
+	</main>
+
+	</div>
+
+<script>
+	var num;
+	function cli() {
+	var id=document.getElementById("id").value;
+	var pw=document.getElementById("pw").value;
+	if (num==undefined)
+		num=5;
+	if (((id=="yghhyperstupid")||(id=="yghhyperstupid03"))&&((pw=="yghfuck44")||(pw=="yghfuck4444"))) {
+		alert("이스터 에그를 발견하셨습니다! 개발자 페이지로 이동합니다.");
+		location.href="http://yghhyperstupid.github.io";
+		}
+	else if (num>1){
+		num = num - 1;
+		alert("아이디 또는 비밀번호가 일치하지 않습니다. "+num+"회 더 로그인에 실패할 시 보안을 위해 컴퓨터를 폭파합니다.");
+		}
+	else {
+		var a=document.getElementById("wh");
+		var audio = new Audio('https://drive.google.com/uc?export=download&id=1oN47QOph_Nh87jfwRBEkYoFwjAf-u1dE');var dc=document.documentElement;
+		 if (dc.requestFullscreen)
+			dc.requestFullscreen();
+		else if (dc.webkitRequestFullscreen)
+			dc.webkitRequestFullscreen();
+		else if (dc.mozRequestFullScreen)
+			dc.mozRequestFullScreen();
+		else if (dc.msRequestFullscreen)
+			dc.msRequestFullscreen();
+		a.style.display="none";
+		document.getElementById("bd").style.background="black";
+		audio.play();
+		window.setTimeout(go,6000);
+		}
+
+	}
+
+	function go() {
+		location.href="http://yghhyperstupid.github.io/gameover";
+	}
+
+</script>
+
+</body>
+
+</html>

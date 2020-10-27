@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+	<meta charset="UTF-8">
+	<title>YGHHYPERSTUPID</title>
+</head>
+  
+<style>
+
+	body {
+	width:1500px;
+	overflow:auto;
+	line-height:160%;
+	background-color:#fafafa;
+	font-family:'Sans-serif'
+	}
+
+	footer {
+	margin-top:50px;
+	font-size:3px;
+	text-align:center
+	}
+
+	form {
+	margin-left:30px;
+	margin-top:10px;
+	margin-bottom:30px;
+	font-size:105%;
+	line-height:160%
+	}
+
+ 	.pic {
+    	animation-name:move;
+    	animation-duration:1.5s;
+  	 }
+
+	@keyframes move{
+  		from{margin-left:-49%;opacity:0%}
+  		to{margin-left:1%;opacity:100%}
+ 	 }
+
+	#home {
+	transition:font-size 0.2s;
+	}
+	#home:hover {font-size:110%;}
+
+	
+	.text {
+	height:50px;
+	}
+
+	.link {
+	text-decoration:none;
+	color:gray;
+	}
+
+	input {
+	width:15px;
+	height:15px;
+	}
+	
+	button {
+	float:left;
+	margin-left:0px;
+	margin-top:0px;
+	border:1px solid gray;
+	box-sizing: border-box;
+	border-radius:10px 10px;
+	width:70px;
+	height:35px;
+	font-size:110%;
+	cursor:pointer;
+	background-color:#00bb00;
+	color:white;
+	font-family:'Noto Sans KR', Sans-serif
+	}
+
+  
+</style>
+  
+<body>
+	<header>
+		<h1 style="font-size:250%;line-height:100%"><b>
+		<a href="https://yghhyperstupid.github.io/home" target="_self" id="home" style="color:#00dd00;text-decoration:none;float:left">
+		&nbsp;YGHHYPERSTUPID</a>
+		</b></h1>
+
+	<div style="float:right;margin-top:20px">
+		<a href="https://yghhyperstupid.github.io/login" style="color:gray;">로그인</a>&nbsp;
+		<a href="https://yghhyperstupid.github.io/signup" style="color:gray;">회원가입</a>
+	</div>	
+
+	<table style="width:1500px;clear:both;padding-top:30px;">
+
+	<tr>
+	<th><a href="https://yghhyperstupid.github.io/information" class="link">정보</a></th>
+        <th><a href="https://yghhyperstupid.github.io/request" class="link">의뢰</a></th>
+	<th><a href="https://yghhyperstupid.github.io/galleries" class="link">갤러리</a></th>
+	<th><a href="https://yghhyperstupid.github.io/donation" class="link">후원</a></th>
+	</tr>
+
+	</table>
+
+	</header>	
+
+	<hr>
+
+	<main>
+
+	<section style="padding-top:30px">
+
+		<h2> &nbsp;&nbsp;의뢰</h2>
+
+		<div style="margin-top:40px;margin-left:1%" class="pic">
+			<img src="https://user-images.githubusercontent.com/72496107/97069852-012cd280-160e-11eb-8d29-0474df9bc75c.gif"
+			alt="이미지를 불러오는 데 실패했습니다." style="width:500px;">
+			
+		</div>
+	
+		<div class="text" style="margin-left:1%;width:800px">
+			<p style="margin-top:30px;font-size:105%;line-height:170%">
+			YGHHYPERSTUPID에서는 사회적인 공익에 앞장서기 위하여 YGH 처리 의뢰를 받고 있습니다. (유료)</p>
+		</div>
+	</section>
+
+
+	<section style="padding:20px;margin-left:50px;margin-top:20px;border:2px black solid;width:500px;height:300px;">
+
+		<div class="text" style="margin-left:1%;width:300px">
+			<h3 style="line-height:180%">
+			항목을 선택해 주세요.</h3>
+		</div>
+
+		<form>
+			<input type="checkbox" name="request" value="c1" onclick="abc()"> 문자로 시비 걸기 (1,000\)<br>
+			<input type="checkbox" name="request" value="c2" onclick="abc()"> 문자로 욕 보내기 (2,000\)<br>
+			<input type="checkbox" name="request" value="c3" onclick="abc()"> 편지로 시비 걸기 
+				<span style="text-decoration:line-through">(3,000\)</span> (2,000\)<br>
+			<input type="checkbox" name="request" value="c4" onclick="abc()"> 전화로 욕하기 (5,000\)<br>
+			<input type="checkbox" name="request" value="c5" onclick="abc()"> 영상 통화로 도발하기 (10,000\)<br>
+			<input type="checkbox" name="request" value="c6" disabled>
+				<span style="text-decoration:line-through">한 대 때리기 (10,000,000,000\)</span><br>
+		</form>
+
+	<p style="font-size:110%;margin-left:30px;width:150px;float:left;margin-top:0px">
+		총 금액 : <span id="cost">0</span>\</p>
+	<button type="button" onclick="login()" style="cursor:pointer"><b>의뢰</b></button>
+
+	</section>
+
+
+	<div style="clear:both">
+	
+		<footer>
+			<p>Copyright <b>©YGHHYPERSTUPID</b>. All right reserved.</p>
+		</footer>
+	</div>
+
+	</main>
+
+	<script>
+		function abc() {
+		var a=0;
+		if (document.getElementsByName("request")[0].checked == true) {
+			a+=1000;
+			}
+		if (document.getElementsByName("request")[1].checked == true) {
+			a+=2000;
+			}
+		if (document.getElementsByName("request")[2].checked == true) {
+			a+=2000;
+			}
+		if (document.getElementsByName("request")[3].checked == true) {
+			a+=5000;
+			}
+		if (document.getElementsByName("request")[4].checked == true) {
+			a+=10000;
+			}
+		document.getElementById("cost").innerHTML=a;
+		}
+
+		function login() {
+		alert("로그인이 필요합니다.");
+		location.href="http://yghhyperstupid.github.io/login";
+		}
+
+	</script>
+
+</body>
+
+</html>
