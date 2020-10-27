@@ -11,10 +11,13 @@
 	background-color:black
 	}
 	
-	img {
-	width:100%;
-	height:100%;
+	html, body {
+		margin: 0;
+		width:100%;
+		height: 100%;
+		overflow: hidden;
 	}
+
 </style>
 
 <body>
@@ -22,12 +25,15 @@
 	<img id="i" src="https://user-images.githubusercontent.com/72496107/97328342-46c0f800-18b9-11eb-8f35-e99e4fde0da5.gif">
 
 <script>
-	window.onload=window.setTimeout(ch,5500);
-	
+	window.onload=ad();
+	window.setTimeout(ch,5500);
+	function ad(){
+		var audio = new Audio('https://drive.google.com/uc?export=download&id=1N0HzPCV0CDdscyrGd99JwpmufozDxlab');
+		audio.play();
+		}
 	function ch() {
 		document.getElementById("i").src="https://user-images.githubusercontent.com/72496107/97328377-4fb1c980-18b9-11eb-9e63-906449b2a991.png";
 		}
-		
 </script>
 	
 </body>
