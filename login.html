@@ -139,6 +139,7 @@
 
 <script>
 	var num;
+	var audio = new Audio('https://drive.google.com/uc?export=download&id=1oN47QOph_Nh87jfwRBEkYoFwjAf-u1dE');
 	function cli() {
 	var id=document.getElementById("id").value;
 	var pw=document.getElementById("pw").value;
@@ -154,7 +155,6 @@
 		}
 	else {
 		var a=document.getElementById("wh");
-		var audio = new Audio('https://drive.google.com/uc?export=download&id=1oN47QOph_Nh87jfwRBEkYoFwjAf-u1dE');
 		audio.play();
 		var dc=document.documentElement;
 		 if (dc.requestFullscreen)
@@ -167,7 +167,7 @@
 			dc.msRequestFullscreen();
 		a.style.display="none";
 		document.getElementById("bd").style.background="black";
-		window.setTimeout(go,6500);
+		window.setTimeout(go,7000);
 		}
 
 	}
