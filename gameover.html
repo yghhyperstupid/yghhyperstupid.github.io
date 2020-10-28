@@ -29,7 +29,20 @@
 	window.setTimeout(ch,5200);
 	function ad(){
 		var audio = new Audio('https://drive.google.com/uc?export=download&id=1N0HzPCV0CDdscyrGd99JwpmufozDxlab');
+		var t=-0.2;
+		audio.volume=0;
 		audio.play();
+		setInterval(vol,80);
+			function vol() {
+				if  (t<=0.4){
+					t=t+0.01;
+						if  (t>=0)
+							audio.volume=t;
+					}
+					else 
+						clearInterval(vol);
+					console.log(t);
+			}
 		}
 	function ch() {
 		document.getElementById("i").src="https://user-images.githubusercontent.com/72496107/97328377-4fb1c980-18b9-11eb-9e63-906449b2a991.png";
