@@ -4,7 +4,8 @@
 ## 1. YGHHYPERSTUPID이란?
 ![이미지를 불러올 수 없습니다.](https://user-images.githubusercontent.com/72496107/95549219-d1909e80-0a41-11eb-9830-e46f14ba060f.png)
 
-&nbsp;**YGHHYPERSTUPID**은 **YGH**에게 엿을 먹이기 위해 운영되는 웹페이지로, **YGH**의 기분을 상하게 하는 것을 기본 목표로 삼고 있습니다. 주소는 [https://yghhyperstupid.github.io/home](https://yghhyperstupid.github.io/home)이며, [https://bit.ly/34GKe4C](https://bit.ly/34GKe4C)로도 접속 가능합니다. Github 주소는 [https://github.com/yghhyperstupid/yghhyperstupid.github.io](https://github.com/yghhyperstupid/yghhyperstupid.github.io)입니다.
+&nbsp;**YGHHYPERSTUPID**은 **YGH**에게 엿을 먹이기 위해 운영되는 웹페이지로, **YGH**의 기분을 상하게 하는 것을 기본 목표로 삼고 있습니다. 주소는 [https://yghhyperstupid.github.io/home](https://yghhyperstupid.github.io/home)이며, [https://bit.ly/34GKe4C](https://bit.ly/34GKe4C)로도 접속 가능합니다.
+Github 주소는 [https://github.com/yghhyperstupid/yghhyperstupid.github.io](https://github.com/yghhyperstupid/yghhyperstupid.github.io)입니다.
 
 ## 2. YGHHYPERSTUPID의 제작
 &nbsp;**YGHHYPERSTUPID**은 HTML로 제작되었으며, 다른 웹페이지 제작 도구는 사용하지 않고 메모장으로 한 글자씩 쓰면서 제작되었습니다. CSS, Javascript 등의 언어도 이용되었습니다.
