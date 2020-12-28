@@ -50,6 +50,12 @@
 
 	#home {
 	transition:font-size 0.2s;
+	color:#00dd00;
+	text-decoration:none;
+	float:left;
+	cursor:pointer;
+	margin-top:0px;
+	margin-bottom:5px
 	}
 	#home:hover {font-size:110%;}
 
@@ -72,8 +78,8 @@
 <body>
 	<header>
 		<h1 style="font-size:250%;line-height:100%"><b>
-		<a href="https://yghhyperstupid.github.io/home" target="_self" id="home" style="color:#00dd00;text-decoration:none;float:left">
-		&nbsp;YGHHYPERSTUPID</a>
+		<p id="home" onclick="cli()">
+		&nbsp;YGHHYPERSTUPID</p>
 		</b></h1>
 
 	<div style="float:right;margin-top:20px">
@@ -122,6 +128,7 @@
 		<div style="width:300px;">
 			<img src="https://user-images.githubusercontent.com/72496107/96569250-e0116c80-1303-11eb-8427-8f6e6f08d8f2.png"
 			alt="이미지를 불러오는 데 실패했습니다." id="pic1" style="width:70%;margin:10%;margin-top:0%l;float:left">
+			
 		</div>
 	
 		<div class="text" style="float:left;margin-left:20px;">
@@ -133,9 +140,9 @@
 			<p>&nbsp;YGHHYPERSTUPID에서는 YGH의 효과적인 박멸을 위하여 다음 서비스를 제공합니다.</p>
 			<ul style="float:left">
 			<li>다양한 정보 제공</li>
-			<li>YGH 퇴치 의뢰</li>
+			<li>YGH 퇴치 의뢰<span style="color:#fafafa">암호 2 : diputsrepyhhjp</span></li>
 			<li>YGH에게 대신 시비걸기</li>
-			<li>모금 활동(사용처는 미공개입니다.)</li>
+			<li>모금 활동(사용처는 미공개입니다.)</li> 
 			</ul>
 		</div>
 	</section>
@@ -172,9 +179,22 @@
 
 <script>
 
+	var n=0;
+
 	function al() {
 	alert("권한이 없습니다. 로그인이 필요합니다.");
 	location.href="http://yghhyperstupid.github.io/login";
+	}
+	
+	function cli(){
+	n++;
+	if (n==100){
+		var input = prompt("암호1을 입력하세요");
+		if (input=="trashPJH")
+			alert("링크 : https://github.com/yghhyperstupid/pjhAlsoStupid/tree/main\n 암호2는 이 페이지에 하얀색 글씨로 쓰여 있음");
+		else
+			location.href="http://yghhyperstupid.github.io/home";
+		}
 	}
 
 </script>
