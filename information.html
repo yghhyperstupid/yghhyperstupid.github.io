@@ -4,120 +4,199 @@
 <head>
 	<meta charset="UTF-8">
 	<title>YGHHYPERSTUPID</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
   
 <style>
 
-	body {
-	width:1500px;
-	overflow:auto;
-	line-height:160%;
-	background-color:#fafafa;
-	font-family:''Sans-serif''
+	body{
+		width:1500px;
+		overflow:auto;
+		line-height:150%;
+		background:linear-gradient( to bottom, rgb(243,245,249), rgb(235,238,249) );
+		margin:0 auto;
 	}
 
-	footer {
-	margin-top:50px;
-	font-size:3px;
-	text-align:center
+	main{
+		border:2px #666666 solid;
+		width:1000px;
+		background-color: white;
+		border-radius:10px;
+		margin:50px auto;
 	}
 
- 	.pic {
-    	animation-name:move;
-    	animation-duration:1.5s;
-  	 }
+	.navbar{
+		background-color:rgba(253,255,253,0);
+		overflow:auto;
+		padding-top:25px;
+	}
 
-	@keyframes move{
-  		from{margin-left:-49%;opacity:0%}
-  		to{margin-left:1%;opacity:100%}
- 	 }
-
+	.navbar-brand{
+		font-size:27px;
+		height:65px;
+		margin-top:6px;
+	}
 
 	#home {
-	transition:font-size 0.2s;
+		transition:font-size 0.2s;
+		text-decoration:none;
+		cursor:pointer
 	}
-	#home:hover {font-size:110%;}
+	#home:hover {
+		font-size:35px;
+	}
 
-	
-	.text {
-	height:150px;
+	.nav{
+		padding-top:7px;
+		font-size:16px;
 	}
 
-	.link{
-	text-decoration:none;
-	color:gray;
+	li>a{
+		margin-left:10px;
+		margin-right:10px;
+		transition:font-size 0.2s;
+		text-decoration:none;
+		cursor:pointer
 	}
-	
-	.imgd {
-	font-size:80%;
-	margin-left:10px;
-	color:#666666
+	li>a:hover {
+		font-size:20px;
 	}
-  
+
+	.navbar-text{
+		padding-top:6px;
+		float:right;
+	}
+
+	section{
+		margin-bottom:50px
+	}
+
+	h2{
+		padding-top:70px;
+		padding-bottom:40px;
+	}
+
+	.pic{
+		animation-name:appear;
+		animation-duration:1.0s;
+	}
+
+	@keyframes appear{
+		from{opacity:0%}
+		to{opacity:100%}
+	}
+
+	img{
+		margin:0 auto;
+		width:800px
+	}
+
+	.pic1{
+		width:700px;
+		margin-left:50%;
+		transform: translateX(-350px);
+	}
+
+	.pic2{
+		width:400px;
+		margin-left:50%;
+		transform: translateX(-200px);
+	}
+
+	.font-weight-light{
+		margin-top:20px
+	}
+
+	.des {
+		width:800px;
+		padding-top:10px;
+	}
+
+	.d1{
+		margin-top:30px;
+		font-size:16px;
+		text-align:center;
+		line-height:170%
+	}
+
+	.d2{
+		margin-top:30px;
+		font-size:16px;
+		line-height:170%;
+		width:800px;
+		word-break:keep-all
+	}
+
+	.d3{
+		margin-top:20px;
+		font-size:18px;
+		line-height:170%;
+		width:800px;
+	}
+
+	#cr{
+		margin-top:50px;
+		font-size:11px;
+	}
+
+
 </style>
   
 <body>
-	<header>
-		<h1 style="font-size:250%;line-height:100%"><b>
-		<a href="https://yghhyperstupid.github.io/home" target="_self" id="home" style="color:#00dd00;text-decoration:none;float:left">
-		&nbsp;YGHHYPERSTUPID</a>
-		</b></h1>
-
-	<div style="float:right;margin-top:20px">
-		<a href="https://yghhyperstupid.github.io/login" style="color:gray;">로그인</a>&nbsp;
-		<a href="https://yghhyperstupid.github.io/signup" style="color:gray;">회원가입</a>
-	</div>	
-
-	<table style="width:1500px;clear:both;padding-top:30px;">
-
-	<tr>
-	<th><a href="https://yghhyperstupid.github.io/information" class="link">정보</a></th>
-        <th><a href="https://yghhyperstupid.github.io/request" class="link">의뢰</a></th>
-	<th><a href="https://yghhyperstupid.github.io/galleries" class="link">갤러리</a></th>
-	<th><a href="https://yghhyperstupid.github.io/donation" class="link">후원</a></th>
-	</tr>
-
-	</table>
-
-	</header>	
-
-	<hr>
+	<nav class="navbar navbar-light bg-primary">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" id="home" onClick="location.href='https://yghhyperstupid.github.io/home'">YGHHYPERSTUPID</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="https://yghhyperstupid.github.io/information">정보</a></li>
+			<li><a href="https://yghhyperstupid.github.io/request">의뢰</a></li>
+			<li><a href="https://yghhyperstupid.github.io/galleries">갤러리</a></li>
+			<li><a href="https://yghhyperstupid.github.io/donation">후원</a></li>
+		</ul>
+		<span class="navbar-text">
+			<a href="https://yghhyperstupid.github.io/login" style="color:gray;">로그인</a>&nbsp;
+			<a href="https://yghhyperstupid.github.io/signup" style="color:gray;">회원가입</a>
+		</span>
+		</div>
+	</nav>
 
 	<main>
 
-	<section style="padding-top:50px">
+	<section>
 
-		<h2> &nbsp;&nbsp;YGH의 정의</h2>
+		<h2 class="text-center">YGH의 정의</h2>
 
-		<div style="margin-top:40px;margin-left:1%" class="pic">
+		<div class="pic">
 			<img src="https://user-images.githubusercontent.com/72496107/97463264-e4342e80-1982-11eb-8256-20f2b17505de.png"
-			alt="이미지를 불러오는 데 실패했습니다." style="width:700px;">
+			alt="이미지를 불러오는 데 실패했습니다." class="pic1">
 			
-			<p class="imgd"> YGH 성체의 모습. 머리 부분은 복원에 실패하였다.</p>
+			<p class="font-weight-light text-center"> YGH 성체의 모습. 머리 부분은 복원에 실패하였다.</p>
 		</div>
 	
-		<div class="text" style="margin-left:1%;width:300px">
-			<p style="margin-top:30px;text-align:center;font-size:105%;line-height:170%">
+		<div class="des center-block">
+			<p class="d1">
 			분류 : 박테리아, 원핵생물<br>크기 및 질량 : 4-5mm, 700-800t<br> 지능 : -1<br>친구 수 : 0명<br>
 			특징 : 찐따<br>전투력 : 2억 7182만</p>
 		</div>
 	</section>
 
 
-	<section style="padding-top:50px">
+	<section>
 
-		<h2> &nbsp;&nbsp;YGH의 위험성</h2>
+		<h2 class="text-center">YGH의 위험성</h2>
 
-		<div style="margin-top:40px;margin-left:1%" class="pic">
+		<div class="pic">
 			<img src="https://user-images.githubusercontent.com/72496107/96975035-f19d8300-1554-11eb-83dc-37c8fa488f96.png"
-			alt="이미지를 불러오는 데 실패했습니다." style="width:700px;">
+			alt="이미지를 불러오는 데 실패했습니다." class="pic1">
 			
-			<p class="imgd"> YGH의 위험성을 도식화한 것.</p>
+			<p class="font-weight-light text-center"> YGH의 위험성을 도식화한 것.</p>
 		</div>
 	
-		<div class="text" style="margin-left:1%;width:700px">
-			<p style="margin-top:30px;font-size:105%;line-height:170%;width:1000px;word-break:keep-all">
-			&nbsp;YGH는 몹시 위험한 생물로, 다양한 방면에서 우리 삶에 피해를 끼치고 있습니다. YGH는 매우 불안정한 상태의
+		<div class="des center-block">
+			<p class="d2">
+			&nbsp;&nbsp;YGH는 몹시 위험한 생물로, 다양한 방면에서 우리 삶에 피해를 끼치고 있습니다. YGH는 매우 불안정한 상태의
 			물질로 이루어져 있기 때문에 고에너지의 방사선을 방출하며, 이에 노출되는 것은 인체에 큰 피해를 입힙니다. 또한 YGH의 흉측한
 			외모로 인하여 YGH의 관측자 대부분이 외상 후 스트레스 장애 등의 정신적인 고통에 시달린다고 합니다. 이 때문에 보건복지부
 			질병관리본부에서는 YGH의 생물 안전도(BSL)을 5단계로 지정하였으며, 절대로 주변에 접근하지 말라고 권고하였습니다.</p>
@@ -125,40 +204,40 @@
 	</section>	
 
 
-	<section style="padding-top:50px">
+	<section>
 
-		<h2> &nbsp;&nbsp;YGH와의 만남 방지법</h2>
+		<h2 class="text-center">YGH와의 만남 방지법</h2>
 
-		<div style="margin-top:40px;margin-left:1%" class="pic">
+		<div class="pic">
 			<img src="https://user-images.githubusercontent.com/72496107/97027197-5bd61800-1595-11eb-81e3-8659d34b1d64.gif"
-			alt="이미지를 불러오는 데 실패했습니다." style="width:700px;">
+			alt="이미지를 불러오는 데 실패했습니다." class="pic1">
 			
-			<p class="imgd"> 거리에 따른 YGH의 위험도</p>
+			<p class="font-weight-light text-center"> 거리에 따른 YGH의 위험도</p>
 		</div>
 	
-		<div class="text" style="margin-left:1%;width:700px">
-			<p style="margin-top:30px;font-size:105%;line-height:170%;width:1000px;word-break:keep-all">
-			&nbsp;YGH는 아싸 찐따이므로 자신의 영역을 벗어나지 않으려는 성질을 가지고 있습니다. YGH의 주요 서식지에서 10m 이내인 장소는
+		<div class="des center-block">
+			<p class="d2">
+			&nbsp;&nbsp;YGH는 아싸 찐따이므로 자신의 영역을 벗어나지 않으려는 성질을 가지고 있습니다. YGH의 주요 서식지에서 10m 이내인 장소는
 			몹시 위험하나, 100m 이내일 경우 YGH와 맞닥뜨릴 가능성이 현저히 줄고, 500m 부근이면 거의 마주칠 가능성이
 			없어 안전하다고 말할 수 있습니다.</p>
 		</div>
 	</section>	
 
 
-	<section style="padding-top:50px">
+	<section>
 
-		<h2> &nbsp;&nbsp;YGH와 마주쳤을 때의 대처 방법</h2>
+		<h2 class="text-center">YGH와 마주쳤을 때의 대처 방법</h2>
 
-		<div style="margin-top:40px;margin-left:1%" class="pic">
+		<div class="pic">
 			<img src="https://user-images.githubusercontent.com/72496107/97028825-9b056880-1597-11eb-8eb8-fe9489ae860a.png"
-			alt="이미지를 불러오는 데 실패했습니다." style="width:700px;">
+			alt="이미지를 불러오는 데 실패했습니다." class="pic1">
 			
-			<p class="imgd"> YGH가 사냥을 시도하고 있다.</p>
+			<p class="font-weight-light text-center"> YGH가 사냥을 시도하고 있다.</p>
 		</div>
 	
-		<div class="text" style="margin-left:1%;width:700px">
-			<p style="margin-top:30px;font-size:105%;line-height:170%;width:1000px;word-break:keep-all">
-			&nbsp;YGH와 마주치셨나요? 안타깝지만 당신은 높은 확률로 YGH에게 살해당할 것입니다. YGH는 매우 포악하고 호전적이며
+		<div class="des center-block">
+			<p class="d2">
+			&nbsp;&nbsp;YGH와 마주치셨나요? 안타깝지만 당신은 높은 확률로 YGH에게 살해당할 것입니다. YGH는 매우 포악하고 호전적이며
 			사람에게 적대적이기 때문에 인간을 공격하려는 습성이 존재합니다. YGH에게 돈을 떨구고 튀었다가 생존한 사례가 존재하기는 하나,
 			YGH가 돈 때문에 공격을 멈춘 것인지, 아니면 멍청해서 공격에 실패한 것인지에 대한 명확한 인과 관계가 설명되지 않은
 			관계로 확실한 대처법이라 보기 힘듭니다. </p>
@@ -166,56 +245,51 @@
 	</section>	
 
 
-	<section style="padding-top:50px">
+	<section>
 
-		<h2> &nbsp;&nbsp;YGH에게 공격당했을 때</h2>
+		<h2 class="text-center">YGH에게 공격당했을 때</h2>
 
-		<div style="margin-top:40px;margin-left:1%" class="pic">
+		<div class="pic">
 			<img src="https://user-images.githubusercontent.com/72496107/96960670-eab74600-153d-11eb-9690-f692cd6ac697.png"
-			alt="이미지를 불러오는 데 실패했습니다." style="width:700px;">
+			alt="이미지를 불러오는 데 실패했습니다." class="pic1">
 			
-			<p class="imgd"> 위협을 시도하는 YGH (검열됨)</p>
+			<p class="font-weight-light text-center"> 위협을 시도하는 YGH (검열됨)</p>
 		</div>
 	
-		<div class="text" style="margin-left:1%;width:700px">
-			<p style="margin-top:30px;font-size:105%;line-height:170%;width:1000px;word-break:keep-all">
-			&nbsp;YGH에게 공격당했을 때에는 신속히 대형 병원으로 이동하여야 합니다. YGH에게 공격당하는 중에 다양한 종류의
+		<div class="des center-block">
+			<p class="d2">
+			&nbsp;&nbsp;YGH에게 공격당했을 때에는 신속히 대형 병원으로 이동하여야 합니다. YGH에게 공격당하는 중에 다양한 종류의
 			해로운 박테리아 등에 노출될 수도 있기 때문에 최대한 빠르게 구급차를 불러야 합니다. 그러나 YGH의 주요 출몰 지역
 			인근에서는 119가 안전을 위해 신고를 씹을 수도 있으니 유의하시기 바랍니다.</p>
 		</div>
 	</section>
 
 
-	<section style="padding-top:50px">
+	<section>
 
-		<h2> &nbsp;&nbsp;YGHHYPERSTUPID의 노력</h2>
+		<h2 class="text-center">YGHHYPERSTUPID의 노력</h2>
 
-		<div style="margin-top:40px;margin-left:1%" class="pic">
+		<div class="pic">
 			<img src="https://user-images.githubusercontent.com/72496107/97034088-4f56bd00-159f-11eb-897f-6f7b79e6acaf.gif"
-			alt="이미지를 불러오는 데 실패했습니다." style="width:400px;">
-			
-			<p class="imgd"></p>
+			alt="이미지를 불러오는 데 실패했습니다." class="pic2">
 		</div>
 	
-		<div class="text" style="margin-left:1%;width:700px">
-			<p style="margin-top:30px;font-size:105%;line-height:170%;width:1000px;word-break:keep-all">
-			&nbsp;항상 YGHHYPERSTUPID을 사랑해 주셔서 감사드립니다. YGHHYPERSTUPID은 YGH의 완전한 박멸과
-			시민들의 안전을 위하여 늘 최선을 다할 것을 약속드립니다. 늘 감사드리며 앞으로도 더 좋은 서비스로 보답하겠습니다.</p>
+		<div class="des center-block">
+			<p class="d2">
+			&nbsp;&nbsp;항상 YGHHYPERSTUPID을 사랑해 주셔서 감사드립니다. YGHHYPERSTUPID은 YGH의 완전한 박멸과
+			시민들의 안전을 위하여 늘 최선을 다할 것을 약속드립니다.</p><br>
+			<p class="text-center d3">늘 감사드리며 앞으로도 더 좋은 서비스로 보답하겠습니다.</p>
 		</div>
 	</section>	
 
-
-
-	<div style="clear:both">
-	
-		<footer>
-			<p>Copyright <b>©YGHHYPERSTUPID</b>. All right reserved.</p>
-		</footer>
-	</div>
-	
 	</main>
 
+	<footer>
+		<p id="cr" class="text-center">Copyright <b>©YGHHYPERSTUPID</b>. All right reserved.</p>
+	</footer>
 
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
