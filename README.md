@@ -8,7 +8,7 @@
 <br>Github 주소는 [https://github.com/yghhyperstupid/yghhyperstupid.github.io](https://github.com/yghhyperstupid/yghhyperstupid.github.io)입니다.
 
 ## 2. YGHHYPERSTUPID의 제작
-&nbsp;**YGHHYPERSTUPID**은 HTML로 제작되었으며, 다른 웹페이지 제작 도구는 사용하지 않고 메모장으로 한 글자씩 쓰면서 제작되었습니다. CSS, Javascript 등의 언어도 이용되었습니다.
+&nbsp;**YGHHYPERSTUPID**은 HTML로 제작되었으며, 다른 웹페이지 제작 도구는 사용하지 않고 메모장에다가 한 글자씩 쓰면서 제작되었습니다. CSS, Javascript 등의 언어도 이용되었으며, jquery와 bootstrap을 이용하였습니다.
 
 ## 3. 왜 이런 짓을?
 &nbsp;**YGH**를 이용한 무언가를 만들고 싶었지만 게임을 만들기에는 소재와 시간이 부족하였고, 영상물은 만들기 귀찮았습니다.<sup>1)</sup> 그러다가 HTML을 이용하여 재작년에 만든 세스코 앱을 계승하는 헛짓을 하면 즐겁겠다는 생각이 들어 제작하였습니다.
