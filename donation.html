@@ -1,184 +1,235 @@
 <!DOCTYPE html>
 <html lang='ko'>
 
-<head>
-	<meta charset="UTF-8">
-	<title>YGHHYPERSTUPID</title>
-</head>
-  
-<style>
-
-	body {
-	width:1500px;
-	overflow:auto;
-	line-height:160%;
-	background-color:#fafafa;
-	font-family:'Sans-serif'
-	}
+	<head>
+		<meta charset="UTF-8" name="viewport">
+		<title>YGHHYPERSTUPID</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	</head>
+	  
+	<style>
 	
+		body{
+			width:1500px;
+			overflow:auto;
+			line-height:150%;
+			background:linear-gradient( to bottom, rgb(243,245,249), rgb(211,217,230) );
+			margin:0 auto;
+		}
 
-	footer {
-	margin-top:50px;
-	font-size:3px;
-	text-align:center
-	}
-
-	form {
-	margin-left:30px;
-	margin-top:10px;
-	margin-bottom:30px;
-	font-size:105%;
-	line-height:160%
-	}
-
- 	.pic {
-    	animation-name:move;
-    	animation-duration:1.5s;
-  	 }
-
-	@keyframes move{
-  		from{margin-left:-49%;opacity:0%}
-  		to{margin-left:1%;opacity:100%}
- 	 }
-
-	#home {
-	transition:font-size 0.2s;
-	}
-	#home:hover {font-size:110%;}
-
+		main{
+			margin:50px auto;
+			width:1000px;
+			box-shadow:0px 0px 20px 1px #AAAAAA;
+			border-radius:15px;
+			background-color:white;
+			padding-bottom:130px;
+			padding-top:30px;
+		}
 	
-	.text {
-	height:50px;
-	}
-
-	.link {
-	text-decoration:none;
-	color:gray;
-	}
-
-	input {
-	width:15px;
-	height:15px;
-	}
+		.navbar{
+			background-color:rgba(0,0,0,0);
+			overflow:auto;
+			padding-top:25px;
+		}
 	
-	button {
-	float:left;
-	border:1px solid gray;
-	box-sizing: border-box;
-	border-radius:10px 10px;
-	margin-top:0px;
-	margin-left:45px;
-	width:80px;
-	height:40px;
-	font-size:110%;
-	cursor:pointer;
-	background-color:#00bb00;
-	color:white;
-	font-family:'Noto Sans KR', Sans-serif
-	}
+		.navbar-brand{
+			font-size:27px;
+			height:65px;
+			margin-top:6px;
+		}
+	
+		#home{
+			transition:font-size 0.2s;
+			text-decoration:none;
+			cursor:pointer
+		}
+		#home:hover{
+			font-size:35px;
+		}
+	
+		.nav{
+			padding-top:7px;
+			font-size:16px;
+		}
+	
+		li>a{
+			margin-left:10px;
+			margin-right:10px;
+			transition:font-size 0.2s;
+			text-decoration:none;
+			cursor:pointer
+		}
+		li>a:hover {
+			font-size:20px;
+		}
+	
+		.navbar-text{
+			padding-top:6px;
+			float:right;
+		}
+		
+		h2{
+			margin-top:50px;
+		}
 
+		#pic{
+			width:700px;
+			margin:60px 150px 0px 150px;
+			padding:0px;
+		}
+
+		.font-weight-light{
+			margin-top:20px;
+			font-size:12px
+		}
+
+		.container{
+			padding-left:40px;
+			margin-top:70px;
+			border:2px black solid;
+			border-radius:10px;
+			background-color:rgb(253,254,255);
+			width:700px;
+			height:320px;
+		}
+
+		.text{
+			margin-left:1%;
+			padding-top:20px;
+		}
+
+		form{
+			font-size:18px;
+			line-height:28px;
+			margin-top:30px;
+			width:150px;
+		}
+
+		input[type="radio"]{
+			margin-top:5px;
+			width:15px;
+			height:15px;
+			margin-right:5px
+		}
+
+		.b{
+			margin:10px auto;
+			width:250px;
+		}
+
+		#sum{
+			font-size:18px;
+			margin-left:15px;
+			width:160px;
+			float:left;
+			margin-top:20px
+		}
+
+		.btn{
+			margin-top:13px;
+			font-size:16px;
+		}
+	
+		#cr{
+			margin-top:60px;
+			font-size:11px;
+		}
+		
   
 </style>
   
 <body>
-	<header>
-		<h1 style="font-size:250%;line-height:100%"><b>
-		<a href="https://yghhyperstupid.github.io/home" target="_self" id="home" style="color:#00dd00;text-decoration:none;float:left">
-		&nbsp;YGHHYPERSTUPID</a>
-		</b></h1>
-
-	<div style="float:right;margin-top:20px">
-		<a href="https://yghhyperstupid.github.io/login" style="color:gray;">로그인</a>&nbsp;
-		<a href="https://yghhyperstupid.github.io/signup" style="color:gray;">회원가입</a>
-	</div>	
-
-	<table style="width:1500px;clear:both;padding-top:30px;">
-
-	<tr>
-	<th><a href="https://yghhyperstupid.github.io/information" class="link">정보</a></th>
-        <th><a href="https://yghhyperstupid.github.io/request" class="link">의뢰</a></th>
-	<th><a href="https://yghhyperstupid.github.io/galleries" class="link">갤러리</a></th>
-	<th><a href="https://yghhyperstupid.github.io/donation" class="link">후원</a></th>
-	</tr>
-
-	</table>
-
-	</header>	
-
-	<hr>
+	<nav class="navbar navbar-light bg-primary">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" id="home" onClick="location.href='https://yghhyperstupid.github.io/home'">YGHHYPERSTUPID</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="https://yghhyperstupid.github.io/information">정보</a></li>
+			<li><a href="https://yghhyperstupid.github.io/request">의뢰</a></li>
+			<li><a href="https://yghhyperstupid.github.io/galleries">갤러리</a></li>
+			<li><a href="https://yghhyperstupid.github.io/donation">후원</a></li>
+		</ul>
+		<span class="navbar-text">
+			<a href="https://yghhyperstupid.github.io/login" style="color:gray;">로그인</a>&nbsp;
+			<a href="https://yghhyperstupid.github.io/signup" style="color:gray;">회원가입</a>
+		</span>
+		</div>
+	</nav>
 
 	<main>
 
-	<section style="padding-top:30px">
+	<section>
 
-		<h2> &nbsp;&nbsp;후원</h2>
+		<h2 class="text-center">후원</h2>
 
-		<div style="margin-top:40px;margin-left:1%" class="pic">
+		<div class="center-block">
 			<img src="https://user-images.githubusercontent.com/72496107/97100343-ba0a1480-16d5-11eb-9c7c-6fe4704ead07.png"
-			alt="이미지를 불러오는 데 실패했습니다." style="width:700px;">
+			alt="이미지를 불러오는 데 실패했습니다." id="pic">
 			
 		</div>
 	
-		<div class="text" style="margin-left:1%;width:800px">
-			<p style="margin-top:30px;font-size:105%;line-height:170%">
+		<p class="font-weight-light text-center">
 			원활한 서버 유지를 위하여 후원을 받고 있습니다.</p>
-		</div>
+
 	</section>
 
 
-	<section style="padding:20px;margin-left:50px;margin-top:40px;border:2px black solid;width:500px;height:300px;">
+	<section class="container center-block">
 
-		<div class="text" style="margin-left:1%;width:300px">
-			<h3 style="line-height:180%">
+		<div class="text">
+			<h3>
 			금액을 선택해 주세요.</h3>
 		</div>
 
 		<form>
-			<input type="radio" name="donation" onclick="abc()"><span id="c1"> 1,000&#65510;</span><br>
-			<input type="radio" name="donation" onclick="abc()"><span id="c2"> 3,000&#65510;</span><br>
-			<input type="radio" name="donation" onclick="abc()"><span id="c3"> 5,000&#65510;</span><br>
-			<input type="radio" name="donation" onclick="abc()"><span id="c4"> 10,000&#65510;</span><br>
-			<input type="radio" name="donation" onclick="abc()" checked><span id="c5"> 장기 기증</span><br>
+			<input type="radio" name="donation" onclick="cli()"><span id="c0"> 1,000&#65510;</span><br>
+			<input type="radio" name="donation" onclick="cli()"><span id="c1"> 3,000&#65510;</span><br>
+			<input type="radio" name="donation" onclick="cli()"><span id="c2"> 5,000&#65510;</span><br>
+			<input type="radio" name="donation" onclick="cli()"><span id="c3"> 10,000&#65510;</span><br>
+			<input type="radio" name="donation" onclick="cli()" checked><span id="c4"> 장기 기증</span><br>
 		</form>
 
-	<button type="button" onclick="donate()" style="cursor:pointer">후원</button>
+	<button type="button" onclick="donate()" class="btn btn-light center-block">후원</button>
 
 	</section>
 
-
-	<div style="clear:both">
-	
-		<footer>
-			<p>Copyright <b>©YGHHYPERSTUPID</b>. All right reserved.</p>
-		</footer>
-	</div>
-
 	</main>
 
+	<footer>
+		<p id="cr" class="text-center">Copyright <b>©YGHHYPERSTUPID</b>. All right reserved.</p>
+	</footer>
+
 	<script>
-		function abc() {
+		function cli() {
 
-		var n=0;
+			let i=0;
 
-		document.getElementById("c1").innerHTML=" 1,000&#65510;";
-		document.getElementById("c2").innerHTML=" 3,000&#65510;";
-		document.getElementById("c3").innerHTML=" 5,000&#65510;";
-		document.getElementById("c4").innerHTML=" 10,000&#65510;";
-		document.getElementById("c5").innerHTML=" 50,000&#65510;";
+			$('#c0').html(" 1,000&#65510;");
+			$('#c1').html(" 3,000&#65510;");
+			$('#c2').html(" 5,000&#65510;");
+			$('#c3').html(" 10,000&#65510;");
+			$('#c4').html(" 50,000&#65510;");
 
-		for (n=0;n<=4;n++) {
-			if (document.getElementsByName("donation")[n].checked == true) {
-				document.getElementById(("c"+(n+1))).innerHTML=" 장기 기증";
+			$('input').each(function(){
+				if ($(this).is(":checked")){
+					$('#c'+i).text(' 장기 기증');
 				}
-			}
+				i++;
+			});
 		}
 
 		function donate() {
-		alert("결제되었습니다.");
-		location.href="http://yghhyperstupid.github.io/gameover";
+			alert("결제되었습니다.");
+			location.href="http://yghhyperstupid.github.io/gameover";
 		}
 
 	</script>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 

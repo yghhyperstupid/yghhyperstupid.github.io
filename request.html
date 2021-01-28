@@ -21,14 +21,11 @@
 		main{
 			margin:50px auto;
 			width:1000px;
-			border:2px black solid;
+			box-shadow:0px 0px 20px 1px #AAAAAA;
 			border-radius:15px;
 			background-color:white;
+			padding-top:30px;
 			padding-bottom:130px
-		}
-	
-		#p{
-			font-size:17px;
 		}
 	
 		.navbar{
@@ -100,18 +97,18 @@
 
 		.text{
 			margin-left:1%;
-			margin-bottom:0px;
-			padding-top:10px;
+			margin-bottom:10px;
+			padding-top:20px;
 		}
 
 		form{
-			font-size:18px;
+			font-size:16px;
 			line-height:28px;
 			margin-top:20px
 		}
 
 		input[type="checkbox"]{
-			margin-top:2px;
+			margin-top:4px;
 			width:15px;
 			height:15px;
 		}
@@ -181,7 +178,7 @@
 	<section class="container center-block">
 
 		<div class="text">
-			<h3 style="line-height:180%">
+			<h3>
 			항목을 선택해 주세요.</h3>
 		</div>
 
@@ -211,37 +208,38 @@
 	</footer>
 
 	<script>
+
 		function sum() {
-		var a=0;
-		if ($('input[value=c0]').is(":checked")) {
-			a+=1000;
+			var a=0;
+			if ($('input[value=c0]').is(":checked")) {
+				a+=1000;
+				}
+			if ($('input[value=c1]').is(":checked")) {
+				a+=2000;
+				}
+			if ($('input[value=c2]').is(":checked")) {
+				a+=2000;
+				}
+			if ($('input[value=c3]').is(":checked")) {
+				a+=5000;
+				}
+			if ($('input[value=c4]').is(":checked")) {
+				a+=10000;
+				}
+			
+			a=String(a);
+			if ((1000<=a)&&(a<10000)){
+				a=a.substring(0,1)+',000';
 			}
-		if ($('input[value=c1]').is(":checked")) {
-			a+=2000;
+			else if (a>=10000){
+				a=a.substring(0,2)+',000';
 			}
-		if ($('input[value=c2]').is(":checked")) {
-			a+=2000;
-			}
-		if ($('input[value=c3]').is(":checked")) {
-			a+=5000;
-			}
-		if ($('input[value=c4]').is(":checked")) {
-			a+=10000;
-			}
-		
-		a=String(a);
-		if ((1000<=a)&&(a<10000)){
-			a=a.substring(0,1)+',000';
-		}
-		else if (a>=10000){
-			a=a.substring(0,2)+',000';
-		}
-		$('#cost').text(a);
+			$('#cost').text(a);
 		}
 
 		function login() {
-		alert("로그인이 필요합니다.");
-		location.href="http://yghhyperstupid.github.io/login";
+			alert("로그인이 필요합니다.");
+			location.href="http://yghhyperstupid.github.io/login";
 		}
 
 	</script>
