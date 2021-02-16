@@ -624,7 +624,12 @@
 					return;
 			}
 			
-			location.href="https://yghhyperstupid.github.io/gameover";
+			$('body').css("transition","all 2s");
+			$('body').css("opacity","0");
+ 			$('body').css("background","#000");
+			setTimeout(()=>{
+				location.href="http://yghhyperstupid.github.io/gameover";
+			},3000);
 			
 		});
 

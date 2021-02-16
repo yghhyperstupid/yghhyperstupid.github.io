@@ -9,57 +9,36 @@
 
 <style>
 
-	html, body {
+	html, body{
 		margin:0;
+		padding:0;
+		overflow:hidden;
 		width:100%;
 		height:100%;
 		background-color:black;
 	}
 
-	canvas{
-		width:700px;
-		height:350px;
+	h1{
+		color:red;
+		opacity:0;
+		position:relative;
+		width:400px;
+		height:100px;
+		text-align:center;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+		font-size:45px;
 	}
 
 </style>
 
 <body>
 
-	<canvas>
-
-	</canvas>
+	<h1>GAME OVER</h1>
 
 <script>
-	/*window.onload=ad();
-	window.setTimeout(ch,5200);
-	
-	function ch() {
-		document.getElementById("i").src="https://user-images.githubusercontent.com/72496107/97328377-4fb1c980-18b9-11eb-9e63-906449b2a991.png";
-		}*/
-
-	let n=0;
-	var canvas = $('canvas')[0];
-	var context = canvas.getContext("2d");
-
-	$(window).on('load',function(){
-		center();
-		pl();
-		ani = setInterval(cv,150);
-		
-	});
-	$(window).resize(function(){
-		center();
-	});
-
-	function center(){
-		var w=$(window).width();
-		var h=$(window).height();
-		
-		$('canvas').css('margin-left',(w/2-350)+'px');
-		$('canvas').css('margin-top',(h/2-175)+'px');
-	}
-
-	function pl(){
+	function p(){
 		var audio = new Audio('https://drive.google.com/uc?export=download&id=1N0HzPCV0CDdscyrGd99JwpmufozDxlab');
 		var t=-0.2;
 		audio.volume=0;
@@ -75,18 +54,15 @@
 						clearInterval(vol);
 			}
 		}
-
-	function cv(){
-		n+=0.05;
-		context.clearRect(0,0,350,175);
-		context.font = (n*5+35)+"px Arial";
-		context.textBaseline = "middle";
-		context.textAlign = "center";
-		context.globalAlpha = n;
-		context.fillStyle="#FF0000";
-		context.fillText("GAME OVER", 150, 80);
-		if(n>=1) clearInterval(ani);
+	
+	function ani(){
+		$('h1').animate({opacity:1,fontSize:"60px",top:"48%"},3500)
 	}
+
+	$(function(){
+		p();
+		setTimeout(ani,1000);
+	})
 
 </script>
 	
