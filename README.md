@@ -29,7 +29,7 @@
 이 때문에 **YGHHYPERSTUPID**에서는 해당 인물의 이니셜을 사용하였고, 해당 인물임을 특정하기 어려운 합성 사진을 이용하는 등 피해자 특정성을 성립시키지 않으려 최선을 다하고 있습니다.
 
 ## 6. 이스터에그
-&nbsp;로그인 창에서 아이디에 yghhyperstupid 또는 yghhyperstupid03을, 비밀번호에 yghfuck44 또는 yghfuck4444를 입력하면 개발자 노트(현재 페이지)를 볼 수 있습니다.
+&nbsp;로그인 창에서 아이디에 yghhyperstupid 또는 yghhyperstupid03을 입력하면 개발자 노트(현재 페이지)를 볼 수 있습니다.
 
 ## 7. 비고
 &nbsp;조만간 웹사이트 **PJHHYPERSTUPID**의 개발을 기획하고 있으나, 자금이 부족해 여러분들의 후원을 받고 있습니다. 또한 **YGHHYPERSTUPID**에는 곧 광고를 배치하여 방문자들의 돈을 빨아먹을 예정입니다.
