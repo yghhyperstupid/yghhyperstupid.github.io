@@ -18,7 +18,7 @@
 		background-color:black;
 	}
 
-	h1{
+	h5{
 		color:red;
 		opacity:0;
 		position:relative;
@@ -35,11 +35,11 @@
 
 <body>
 
-	<h1>GAME OVER</h1>
+	<h5>YOU DIED</h5>
 
 <script>
 	function p(){
-		var audio = new Audio('https://drive.google.com/uc?export=download&id=1N0HzPCV0CDdscyrGd99JwpmufozDxlab');
+		var audio = new Audio('https://drive.google.com/uc?export=download&id=1iD7JXMOCFPB3HBQ2BGHTwv6ncOYz7MPx');
 		var t=-0.2;
 		audio.volume=0;
 		audio.play();
@@ -56,7 +56,10 @@
 		}
 	
 	function ani(){
-		$('h1').animate({opacity:1,fontSize:"60px",top:"48%"},3500)
+		$('h5').animate({opacity:0.14,fontSize:"49px",top:"49.7%"},500,'linear');
+		$('h5').animate({opacity:0.29,fontSize:"52.3px",top:"49.4%"},500,'linear');
+		$('h5').animate({opacity:0.57,fontSize:"57.2px",top:"48.9%"},1000,'linear');
+		$('h5').animate({opacity:1,fontSize:"60px",top:"48%"},1500,'linear');
 	}
 
 	$(function(){
