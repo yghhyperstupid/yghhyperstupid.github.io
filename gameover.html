@@ -36,24 +36,11 @@
 <body>
 
 	<h5>YOU DIED</h5>
+	<audio controls autoplay style="display:none">
+		<source src="/death.mp3" type="audio/mp3">
+	</audio>
 
 <script>
-	function p(){
-		var audio = new Audio('https://drive.google.com/uc?export=download&id=1iD7JXMOCFPB3HBQ2BGHTwv6ncOYz7MPx');
-		var t=-0.2;
-		audio.volume=0;
-		audio.play();
-		setInterval(vol,80);
-			function vol() {
-				if  (t<=0.4){
-					t=t+0.01;
-						if  (t>=0)
-							audio.volume=t;
-					}
-					else 
-						clearInterval(vol);
-			}
-		}
 	
 	function ani(){
 		$('h5').animate({opacity:0.14,fontSize:"49px",top:"49.7%"},500,'linear');
@@ -63,7 +50,6 @@
 	}
 
 	$(function(){
-		p();
 		setTimeout(ani,1000);
 	})
 
